@@ -1,0 +1,24 @@
+baseURL = "http://kusandri.id/"
+theme="hugo-theme-minos"
+title = "Kus Andriadi"
+homepage = "https://kusandri.id"
+
+[Author]
+    name = "Kus Andriadi"
+
+[taxonomies]
+  tag = "tags"
+
+[[menu.main]]
+  name = "About"
+  identifier = "about"
+  url = "/about/"
+  weight = 1
+
+[params.author]
+	name = "Kus Andriadi"
+	gravatar = "me@kusandriadi.com"
+	github = "kusandriadi"
+
+[params]
+	showShareIcons=false
