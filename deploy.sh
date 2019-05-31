@@ -2,6 +2,9 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+echo -e "Remove public"
+rm -rf public
+
 # Build the project.
 hugo -t hugo-theme-minos # if using a theme, replace with `hugo -t <YOURTHEME>`
 
