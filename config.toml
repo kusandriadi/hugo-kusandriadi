@@ -1,7 +1,6 @@
-baseURL = "https://kusandriadi.github.io/"
+baseURL = "https://kusandri.id/"
 theme="hugo-theme-minos"
 title = "Kus Andriadi"
-homepage = "https://kusandriadi.github.io/"
 
 [Author]
     name = "Kus Andriadi"
