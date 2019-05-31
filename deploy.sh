@@ -4,6 +4,7 @@ echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 echo -e "\033[0;32mRemove public\033[0m"
 git rm -rf --cached public
+rm -rf public
 
 echo -e "\033[0;32mForce submodule\033[0m"
 git submodule add --force -b master git@github.com:kusandriadi/kusandriadi.github.io.git public
@@ -13,10 +14,6 @@ hugo -t hugo-theme-minos # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 # Go To Public folder
 cd public
-
-
-echo -e "\033[0;32mPull changes\033[0m"
-git pull
 
 # Add changes to git.
 git add .
