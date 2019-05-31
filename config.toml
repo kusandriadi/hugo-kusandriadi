@@ -21,3 +21,4 @@ title = "Kus Andriadi"
 
 [params]
 	showShareIcons=false
+	canonifyurls = true
