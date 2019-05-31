@@ -20,8 +20,8 @@ title = "Kus Andriadi"
 	github = "kusandriadi"
 
 [params]
-	showShareIcons=false
+	showShareIcons=true
 	canonifyurls = true
 
 [permalinks]
-  posts = "/:title/"
+  posts = "/:section/:title/"
