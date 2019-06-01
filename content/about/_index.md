@@ -10,7 +10,7 @@ The reason behind my two blogs is I want to become more active in writings, with
 
 Currently, I work at blibli as Development Lead, I have more than 8 years of experience as a developer (or in blibli, we called it SDE - Software Development Engineer). As Developer, most of my experiences are using Spring stack, of course, it is because [Spring](https://spring.io) already becomes “standard” in Java environment.
 
-Besides my routine as Developer, I trained regularly in Brazilian Jiujitsu (BJJ) and Judo, I starts training at 2016. in BJJ, I also certified as BJJ fundamental instructor from Alliance BJJ Indonesia. Simple, you have to keep your body healthy to write and/or write properly :D
+Besides my daily activities as Developer, I trained regularly in Brazilian Jiujitsu (BJJ) and Judo, I starts training at 2016. in BJJ, I also certified as BJJ fundamental instructor from Alliance BJJ Indonesia. Simple, you have to keep your body healthy to write and/or work properly :D
 
 Regards,</br>
 Kus
