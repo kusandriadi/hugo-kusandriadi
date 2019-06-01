@@ -2,13 +2,6 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-echo -e "\033[0;32mRemove public\033[0m"
-git rm -rf --cached public
-rm -rf public
-
-echo -e "\033[0;32mForce submodule\033[0m"
-git submodule add --force -b master git@github.com:kusandriadi/kusandriadi.github.io.git public
-
 echo -e "\033[0;32mBuild Module\033[0m"
 hugo -t hugo-theme-minos # if using a theme, replace with `hugo -t <YOURTHEME>`
 
