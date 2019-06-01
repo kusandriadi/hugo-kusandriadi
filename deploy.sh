@@ -9,6 +9,7 @@ hugo -t hugo-theme-minos # if using a theme, replace with `hugo -t <YOURTHEME>`
 cd public
 
 # Add changes to git.
+echo -e "\033[0;32mAdding changes before commit...\033[0m"
 git add .
 
 # Commit changes.
@@ -24,5 +25,6 @@ git commit -m "$msg"
 echo -e "\033[0;32mPush Changes\033[0m"
 git push origin master
 
+echo -e "\033[0;32mFinish!\033[0m"
 # Come Back up to the Project Root
 cd ..
