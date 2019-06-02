@@ -1,6 +1,7 @@
 baseURL = "https://kusandri.id/"
 theme="hugo-theme-minos"
 title = "Kus Andriadi"
+enableRobotsTXT=true
 
 [Author]
     name = "Kus Andriadi"
@@ -25,3 +26,8 @@ title = "Kus Andriadi"
 
 [permalinks]
   posts = "/:section/:title/"
+
+[sitemap]
+  ChangeFreq = "weekly"
+  Priority = "0.5"
+  filename = "sitemap.xml"
