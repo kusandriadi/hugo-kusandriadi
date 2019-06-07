@@ -5,6 +5,7 @@
 
     {{ partial "meta.html" . }}
     {{ partial "og.html" . }}
+    {{ partial "seo.html" . }}
 
     <link href="{{ with .OutputFormats.Get "RSS" }}{{ .Permalink }}{{ end }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />

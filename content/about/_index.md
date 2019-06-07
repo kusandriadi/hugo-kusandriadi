@@ -1,4 +1,6 @@
 ---
+title: "Welcome!"
+description: "Kus Andriadi Blog, you can visit my other blog at https://kusandriadi.com, About Kus Andriadi"
 ---
 
 <img src="https://kusandriadi.com/wp-content/uploads/2019/06/pp.jpg" style="float: left; margin-right: 10px; margin-bottom: 10px" /> 
