@@ -1,22 +1,12 @@
 ---
-title: Install dan konfigurasi JDK, Netbeans dan Eclipse di Linux Mint
-author: Kus Andriadi
-type: post
+title: "Install dan konfigurasi JDK, Netbeans dan Eclipse di Linux Mint"
 date: 2011-07-19T18:53:44+00:00
-url: /install-dan-konfigurasi-jdk-netbeans-dan-eclipse-di-linux-mint/
-categories:
-  - Activities
 
 ---
-<p style="text-align: justify;">
-  Bagi yang baru ingin memulai belajar programming menggunakan Java, atau bahkan sudah lama menggunakan Java tapi baru menggunakan Linux, atau bahkan belum pernah menggunakan Java dan belum pernah menggunakan Linux :hammer:, disini saya akan menulis tutorial singkat bagaimana menginstall dan mengkonfigurasi JDK, Netbeans dan Eclipse secara step by step, saya biasa menggunakan Eclipse untuk belajar Android Programming dan Netbeans untuk Java Web, dll. Tapi tentu saja semua itu bukanlah paksaan, anda bisa memilih IDE kesayangan anda dalam membangun suatu aplikasi, hehe&#8230;.<!--more-->
-</p>
-
-**1. Install JDK**
-
-<li style="text-align: justify;">
-  Download JDK <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">disini</a>.
-</li>
+Bagi yang baru ingin memulai belajar programming menggunakan Java, atau bahkan sudah lama menggunakan Java tapi baru menggunakan Linux, atau bahkan belum pernah menggunakan Java dan belum pernah menggunakan Linux :D, di sini saya akan menulis tutorial singkat bagaimana menginstall dan mengkonfigurasi JDK, Netbeans dan Eclipse langkah demi langkah. Saya biasa menggunakan Eclipse untuk belajar Android Programming, dan Netbeans untuk Java Web, dll. Tapi tentu saja semua itu bukanlah paksaan, kamu bisa memilih IDE kesayangan masing-masing dalam membangun suatu aplikasi :)
+<!--more-->
+## 1. Install JDK
+Download JDK <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">disini</a>.
 <li style="text-align: justify;">
   Buka terminal, lalu pergi ke direktori tempat JDK yang sudah di download tadi berada, Misal berada di direktori /home/kusandriadi/data/app/ berarti ketikan
 </li>
@@ -40,7 +30,7 @@ categories:
 > PATH=$JAVA_HOME/bin:$PATH  
 > export PATH
 
-**2. Install Netbeans**
+## 2. Install Netbeans
 
   * Download Netbeans [disini][1].
 
@@ -60,7 +50,7 @@ categories:
 
   * Setelah itu akan keluar wizard, dan kamu hanya perlu mengikuti urutannya seperti di windows 😀
 
-**3. Install Eclipse**
+## 3. Install Eclipse
 
 <li style="text-align: justify;">
   Download Eclipse <a href="http://kambing.ui.ac.id">disini.</a> (Mirror Lokal biar cepet :D)

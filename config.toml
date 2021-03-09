@@ -22,6 +22,7 @@ googleAnalytics = "UA-141670233-1"
 [params]
 	showShareIcons=true
 	canonifyurls = true
+	enableEmoji=true
 
 [permalinks]
   posts = "/:section/:title/"
