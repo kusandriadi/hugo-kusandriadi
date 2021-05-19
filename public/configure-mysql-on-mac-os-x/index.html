@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello Hugo - Kus Andriadi</title>
+    <title>Configure MySQL on OS X - Kus Andriadi</title>
 
         <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="map[github:kusandriadi]">
-        <meta property="og:title" content="Hello Hugo" />
+        <meta property="og:title" content="Configure MySQL on OS X" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="https://kusandriadi.com/posts/hello-hugo/" />
+    <meta property="og:url" content="https://kusandriadi.com/configure-mysql-on-mac-os-x/" />
     
     <script type="application/ld+json">
     {
@@ -24,14 +24,14 @@
              "@id": "https:\/\/kusandriadi.com\/"
         },
         "articleSection" : "posts",
-        "name" : "Hello Hugo",
-        "headline" : "Hello Hugo",
+        "name" : "Configure MySQL on OS X",
+        "headline" : "Configure MySQL on OS X",
         "description" : "",
         "inLanguage" : "en-US",
         "author" : "Kus Andriadi",         
-        "url" : "https:\/\/kusandriadi.com\/posts\/hello-hugo\/",
-        "wordCount" : "123",
-        "keywords" : [ "Hugo","Blog" ]
+        "url" : "https:\/\/kusandriadi.com\/configure-mysql-on-mac-os-x\/",
+        "wordCount" : "248",
+        "keywords" : [ "Blog" ]
     }
 </script>
 
@@ -72,20 +72,58 @@
     <div class="article-inner">
         
         <header class="article-header">
-            <h1 class="article-title" itemprop="name">Hello Hugo</h1>
+            <h1 class="article-title" itemprop="name">Configure MySQL on OS X</h1>
         </header>
         
         <div class="article-meta">
             
             
+            <div class="post-categories">
+                <div class="article-category">
+                    
+                    
+                    <a class="article-category-link" href="https://kusandriadi.com//categories/activities">Activities</a>
+                    
+                </div>
+            </div>
+            
             
         </div>
         <div class="article-entry" itemprop="articleBody">
-            <p>This is my first post with Hugo platform, I choose static blogging because want more simplicity when writing article. For your information, I already used WordPress for ten years [here] (<a href="https://kusandriadi.com/)">https://kusandriadi.com/)</a>. I do not have any problem with WordPress blogging, it is run well until now, but I need a more simple way to writing. Adding more WordPress blog could be very overkill, because I do not need any fancy feature ;), just create the file and publish the article.</p>
-<p>I decided to split the blog to give more focus outcomes, <a href="https://kusandriadi.com">kusandriadi.com</a> will fill by more random articles, for tech-related will focus on this site. Each articles will write mix sometimes with English or Bahasa Indonesia.</p>
-<p>Hope I can write more often.</p>
-<p>Regards,<!-- raw HTML omitted -->
-Kus</p>
+            <p>In this article, I will show you how to configure MySQL self install. First, you have to make sure there is .bash_login file in your home directory, if the file not exist, just make it and open that file with:</p>
+<blockquote>
+<p>edit .bash_login</p>
+</blockquote>
+<p>Or you can using anything editor that you like most, it doesn’t matter ;p. MySQL installed in <strong>/usr/local/mysql</strong> directory, and changed to <strong>/usr/local/mysql-yourversion</strong>. If you want to start mysql by command line easily, you can add/edit .bash_login like below :</p>
+<blockquote>
+<p># Add the MySQL Home environment<br>
+export set MYSQL_HOME=/usr/local/mysql-yourversion</p>
+<p># Add mysql directory to home path<br>
+export set PATH=$PATH:$MYSQL_HOME/bin</p>
+<p># Make an alias to start and stop mysql<br>
+alias mysqlstart=”/Library/StartupItems/MySQLCOM/MySQLCOM start”<br>
+alias mysqlstop=”/Library/StartupItems/MySQLCOM/MySQLCOM stop”</p>
+</blockquote>
+<p>After that you have to save and close editor, close your terminal too and then open new session terminal then input command like this :</p>
+<blockquote>
+<p>which -a mysql</p>
+</blockquote>
+<p>it should return your mysql directory :D. So, let’s go to the next step, connect to your MySQL as root</p>
+<blockquote>
+<p>mysql -u root<br>
+use mysql;<br>
+SELECT USER,password, host FROM USER</p>
+</blockquote>
+<p>command above will show you mysql and password username, if you want to changes it, just enter command below :</p>
+<blockquote>
+<p>SET PASSWORD for ‘root’@’localhost’ = password(‘iamhandsome’);</p>
+</blockquote>
+<p>Of course, you should not be follow me set password like that, it is not safe :p Do not forget to flush privileges MySQL to refresh your MySQL configuration. Now, you can enter MySQL admin with terminal and start/stop MySQL with command below</p>
+<blockquote>
+<p>mysqlstart start<br>
+//and<br>
+mysqlstart stop</p>
+</blockquote>
         </div>
 
         
@@ -99,29 +137,18 @@ Kus</p>
 
         
         
-        <footer class="article-footer">
-            <ul class="article-tag-list">
-                
-                <li class="article-tag-list-item">
-                    <a class="article-tag-list-link" href="https://kusandriadi.com//tags/hugo">Hugo
-                    </a>
-                </li>
-                
-            </ul>
-        </footer>
-        
     </div>
     <nav id="article-nav">
     
-    <a href="/apakah-sumber-kalian-cukup-kredibel/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/memperlakukan-barang-kesayangan-dengan-baik/" id="article-nav-newer" class="article-nav-link-wrap">
         <div class="article-nav-title"><span>&lt;</span>&nbsp;
-            Apakah sumber kalian cukup kredibel?
+            Memperlakukan barang kesayangan dengan baik
         </div>
     </a>
     
     
-    <a href="/saring-sebelum-sharing/" id="article-nav-older" class="article-nav-link-wrap">
-        <div class="article-nav-title">Saring sebelum sharing&nbsp;<span>&gt;</span></div>
+    <a href="/backup-dan-restore-database-mysql/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Backup dan Restore database MySQL&nbsp;<span>&gt;</span></div>
     </a>
     
 </nav>
