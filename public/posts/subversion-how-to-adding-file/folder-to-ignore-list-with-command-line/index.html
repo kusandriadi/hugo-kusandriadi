@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello Hugo - Kus Andriadi</title>
+    <title>Subversion : How to adding file/folder to ignore list with command line - Kus Andriadi</title>
 
         <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="map[github:kusandriadi]">
-        <meta property="og:title" content="Hello Hugo" />
+        <meta property="og:title" content="Subversion : How to adding file/folder to ignore list with command line" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="https://kusandriadi.com/posts/hello-hugo/" />
+    <meta property="og:url" content="https://kusandriadi.com/posts/subversion-how-to-adding-file/folder-to-ignore-list-with-command-line/" />
     
     <script type="application/ld+json">
     {
@@ -24,14 +24,14 @@
              "@id": "https:\/\/kusandriadi.com\/"
         },
         "articleSection" : "posts",
-        "name" : "Hello Hugo",
-        "headline" : "Hello Hugo",
+        "name" : "Subversion : How to adding file\/folder to ignore list with command line",
+        "headline" : "Subversion : How to adding file\/folder to ignore list with command line",
         "description" : "",
         "inLanguage" : "en-US",
         "author" : "Kus Andriadi",         
-        "url" : "https:\/\/kusandriadi.com\/posts\/hello-hugo\/",
-        "wordCount" : "123",
-        "keywords" : [ "Hugo","Blog" ]
+        "url" : "https:\/\/kusandriadi.com\/posts\/subversion-how-to-adding-file\/folder-to-ignore-list-with-command-line\/",
+        "wordCount" : "247",
+        "keywords" : [ "Blog" ]
     }
 </script>
 
@@ -72,7 +72,7 @@
     <div class="article-inner">
         
         <header class="article-header">
-            <h1 class="article-title" itemprop="name">Hello Hugo</h1>
+            <h1 class="article-title" itemprop="name">Subversion : How to adding file/folder to ignore list with command line</h1>
         </header>
         
         <div class="article-meta">
@@ -81,11 +81,12 @@
             
         </div>
         <div class="article-entry" itemprop="articleBody">
-            <p>This is my first post with Hugo platform, I choose static blogging because want more simplicity when writing article. For your information, I already used WordPress for ten years [here] (<a href="https://kusandriadi.com/)">https://kusandriadi.com/)</a>. I do not have any problem with WordPress blogging, it is run well until now, but I need a more simple way to writing. Adding more WordPress blog could be very overkill, because I do not need any fancy feature ;), just create the file and publish the article.</p>
-<p>I decided to split the blog to give more focus outcomes, <a href="https://kusandriadi.com">kusandriadi.com</a> will fill by more random articles, for tech-related will focus on this site. Each articles will write mix sometimes with English or Bahasa Indonesia.</p>
-<p>Hope I can write more often.</p>
-<p>Regards,<!-- raw HTML omitted -->
-Kus</p>
+            <p>Maybe we had known how to add a file or folder (from this time and so on I will just said &ldquo;file&rdquo;) on IDE. In this case, I often using Eclipse, and adding files as ignore list in eclipse is like shooting fish in a barrel. But occasionally we have to use a command-line to complete it. and do not worry, this is not too difficult. I will show you how 🙂</p>
+<p>There are two conditions of a file that we want to ignore. First, the file is already in svn repo, and the others not in svn yet. How we tackle these? Remember to always remove a file from svn repo first for this case. because we can not add a file to ignore the list while the file is on the repo. What we have to do just go to the directory of our repo in local, and just put the command below</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ svn rm --keep-local filename
+</code></pre></div><p>The command above will remove our file from svn but will keep the file on our local. just simple. after this, we can add them to ignore list with the command below</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ svn propset svn:ignore filename .
+</code></pre></div><p>look at the dot (.) sign at the end of the command, after you do that. voila, the file will be included in the ignoring list and will never be committed to the repository. this last command also applies to all files that never commit before to the repo.</p>
         </div>
 
         
@@ -99,29 +100,18 @@ Kus</p>
 
         
         
-        <footer class="article-footer">
-            <ul class="article-tag-list">
-                
-                <li class="article-tag-list-item">
-                    <a class="article-tag-list-link" href="https://kusandriadi.com//tags/hugo">Hugo
-                    </a>
-                </li>
-                
-            </ul>
-        </footer>
-        
     </div>
     <nav id="article-nav">
     
-    <a href="/apakah-sumber-kalian-cukup-kredibel/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/posts/tpa-tes-potensi-akademik-bappenas/" id="article-nav-newer" class="article-nav-link-wrap">
         <div class="article-nav-title"><span>&lt;</span>&nbsp;
-            Apakah sumber kalian cukup kredibel?
+            TPA (Tes Potensi Akademik) Bappenas
         </div>
     </a>
     
     
-    <a href="/posts/saring-sebelum-sharing/" id="article-nav-older" class="article-nav-link-wrap">
-        <div class="article-nav-title">Saring sebelum sharing&nbsp;<span>&gt;</span></div>
+    <a href="/posts/copy-rows-into-same-table-in-mysql/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Copy row(s) into same table in MySQL&nbsp;<span>&gt;</span></div>
     </a>
     
 </nav>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello Hugo - Kus Andriadi</title>
+    <title>How to add windows font in linux? - Kus Andriadi</title>
 
         <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="map[github:kusandriadi]">
-        <meta property="og:title" content="Hello Hugo" />
+        <meta property="og:title" content="How to add windows font in linux?" />
     <meta property="og:description" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:url" content="https://kusandriadi.com/posts/hello-hugo/" />
+    <meta property="og:url" content="https://kusandriadi.com/posts/how-to-add-windows-font-in-linux/" />
     
     <script type="application/ld+json">
     {
@@ -24,14 +24,14 @@
              "@id": "https:\/\/kusandriadi.com\/"
         },
         "articleSection" : "posts",
-        "name" : "Hello Hugo",
-        "headline" : "Hello Hugo",
+        "name" : "How to add windows font in linux?",
+        "headline" : "How to add windows font in linux?",
         "description" : "",
         "inLanguage" : "en-US",
         "author" : "Kus Andriadi",         
-        "url" : "https:\/\/kusandriadi.com\/posts\/hello-hugo\/",
-        "wordCount" : "123",
-        "keywords" : [ "Hugo","Blog" ]
+        "url" : "https:\/\/kusandriadi.com\/posts\/how-to-add-windows-font-in-linux\/",
+        "wordCount" : "228",
+        "keywords" : [ "Blog" ]
     }
 </script>
 
@@ -72,7 +72,7 @@
     <div class="article-inner">
         
         <header class="article-header">
-            <h1 class="article-title" itemprop="name">Hello Hugo</h1>
+            <h1 class="article-title" itemprop="name">How to add windows font in linux?</h1>
         </header>
         
         <div class="article-meta">
@@ -81,11 +81,25 @@
             
         </div>
         <div class="article-entry" itemprop="articleBody">
-            <p>This is my first post with Hugo platform, I choose static blogging because want more simplicity when writing article. For your information, I already used WordPress for ten years [here] (<a href="https://kusandriadi.com/)">https://kusandriadi.com/)</a>. I do not have any problem with WordPress blogging, it is run well until now, but I need a more simple way to writing. Adding more WordPress blog could be very overkill, because I do not need any fancy feature ;), just create the file and publish the article.</p>
-<p>I decided to split the blog to give more focus outcomes, <a href="https://kusandriadi.com">kusandriadi.com</a> will fill by more random articles, for tech-related will focus on this site. Each articles will write mix sometimes with English or Bahasa Indonesia.</p>
-<p>Hope I can write more often.</p>
-<p>Regards,<!-- raw HTML omitted -->
-Kus</p>
+            <p>You can find font like Tahoma, Arial, Times New Roman, Verdana, etc. in windows OS, but not in Linux. You will find a little problem because of that, the example one is, if you open document that using font there isn&rsquo;t exist, it will make your document untidy. So how to adding windows font in linux? it is very easy, there are 2 ways to adding windows font in linux.</p>
+<p><strong>1. Download from repository</strong></p>
+<p>In default, there is windows font package in repository. You only need to execute this command below</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get install ttf-mscorefonts-installer
+</code></pre></div><p>but if you using this way, you will not find tahoma&rsquo;s font. I don&rsquo;t know why, but you can add it manually with the 2nd way.</p>
+<p><strong>2. Copy windows font</strong></p>
+<p>There are several step with this way :</p>
+<ul>
+<li>Copy windows font, you can find it in &ldquo;C:\Windows\Fonts&rdquo; (Win7 based), put in 1 folder.</li>
+<li>Login to Linux Mint (I am using LM 12 :p ) as root</li>
+<li>Paste to &ldquo;/usr/share/fonts/truetype&rdquo;</li>
+<li>Open terminal, type command below :</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd /usr/share/fonts/truetype
+chmod <span style="color:#ae81ff">777</span> -R folder-name/*
+</code></pre></div><ul>
+<li>Now, you can check it works or not. Open LibreOffice or OpenOffice. Is there Tahoma, Arial or Times New Roman? if still doesn&rsquo;t exist, Logout or restart your PC first.</li>
+</ul>
+<p>Still there is no changes? just follow the instructions above one more time with carefully. it should be works without problem.</p>
         </div>
 
         
@@ -99,29 +113,18 @@ Kus</p>
 
         
         
-        <footer class="article-footer">
-            <ul class="article-tag-list">
-                
-                <li class="article-tag-list-item">
-                    <a class="article-tag-list-link" href="https://kusandriadi.com//tags/hugo">Hugo
-                    </a>
-                </li>
-                
-            </ul>
-        </footer>
-        
     </div>
     <nav id="article-nav">
     
-    <a href="/apakah-sumber-kalian-cukup-kredibel/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/posts/backup-dan-restore-database-mysql/" id="article-nav-newer" class="article-nav-link-wrap">
         <div class="article-nav-title"><span>&lt;</span>&nbsp;
-            Apakah sumber kalian cukup kredibel?
+            Backup dan Restore database MySQL
         </div>
     </a>
     
     
-    <a href="/posts/saring-sebelum-sharing/" id="article-nav-older" class="article-nav-link-wrap">
-        <div class="article-nav-title">Saring sebelum sharing&nbsp;<span>&gt;</span></div>
+    <a href="/posts/error-file-not-found-in-linux-mint-when-using-ms.-office-on-wine/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">Error “File not found” in Linux Mint when using Ms. Office on Wine&nbsp;<span>&gt;</span></div>
     </a>
     
 </nav>
