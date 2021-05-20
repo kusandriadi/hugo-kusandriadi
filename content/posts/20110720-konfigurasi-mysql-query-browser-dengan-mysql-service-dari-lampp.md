@@ -15,7 +15,7 @@ $cd /var/run/mysql
 {{< /highlight >}}
 
 Kalau langkah diatas sudah dilewati, sekarang tinggal mengcopy file mysql.sock dari `/opt/lampp/var/mysql/mysql.sock` secara softlink, perbedaan mencopy secara hardlink dan softlink adalah, Jika hardlink, apabila file parentnya di hapus, maka file hasil copy nya masih tetap bisa digunakan. Jika softlink (ln -s), apabila file masternya dihapus, maka file hasil copy nya tidak akan bisa dibaca lagi :
-</p>
+
 {{< highlight bash >}}
 $sudo ln -s /opt/lampp/var/mysql/mysql.sock mysqld.sock
 {{< /highlight >}}
