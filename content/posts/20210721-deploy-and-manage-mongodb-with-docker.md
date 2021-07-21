@@ -74,7 +74,7 @@ kusa $ sudo mkdir -p /mongodata
 
 I creating folder "mongodata", the folder will used for storing mongo data from container. Anyway, you can use any folder name. After that, go to that directory and start container
 {{< highlight bash >}}
-kusa $ docker run -d -v /Users/someone/code/mongodata:/data/db --name mymongo -d mongo
+kusa $ docker run -d -v /Users/someone/code/mongodata:/data/db -p 27017:27017 --name mymongo -d mongo
 9d120dc5fd4cd679ad5a589a2cf49839e0d7c27df9923f03a49f18cd264c3458
 {{< /highlight >}}
 
@@ -82,6 +82,7 @@ kusa $ docker run -d -v /Users/someone/code/mongodata:/data/db --name mymongo -d
 |:----------|:----------|
 | -d    | Run in background    |
 | -v    | Mounting data from container to local (localPath:containerPath)    |
+| -p    | expose/publish port to outside container    |
 | -name    | Container name    |
 
 Now, you can try to list running container again 
