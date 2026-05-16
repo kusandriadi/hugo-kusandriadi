@@ -33,6 +33,12 @@ jobs:
       - name: Build site
         run: hugo --minify --gc
 
+      - name: Preserve AGENTS.md from publish branch
+        continue-on-error: true
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/kusandriadi/kusandriadi.github.io/master/AGENTS.md -o ./public/AGENTS.md
+          echo "AGENTS.md preserved into public/"
+
       - name: Deploy to kusandriadi.github.io
         uses: peaceiris/actions-gh-pages@v4
         with:

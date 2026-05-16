@@ -147,6 +147,8 @@ Workflow juga ber-trigger:
 - Cron `15 */6 * * *` (tiap 6 jam, untuk refresh sidebar AI feed yang fetch remote JSON saat build)
 - `workflow_dispatch` (manual)
 
+**Preservasi `AGENTS.md` di destination:** Workflow punya step `Preserve AGENTS.md from publish branch` yang fetch `AGENTS.md` existing dari `kusandriadi.github.io@master` lalu copy ke `./public/AGENTS.md` sebelum deploy. Tujuan: file `AGENTS.md` di destination repo tidak ikut ter-clean saat `peaceiris/actions-gh-pages` replace `public_dir`. Build Hugo sendiri tidak menghasilkan `AGENTS.md` — file ini hidup hanya di destination dan di-pertahankan via langkah curl tersebut. Step ini `continue-on-error: true` jadi build tetap sukses meski file tidak ada (mis. first deploy).
+
 **Cara legacy (`deploy.sh`):** Hanya pakai kalau user explicit minta. Skrip ini build → cd public → git commit & push. Memerlukan `public/` sebagai submodule git valid.
 
 ---
