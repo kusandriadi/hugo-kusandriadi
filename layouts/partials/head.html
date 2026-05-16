@@ -18,6 +18,8 @@
         .nav-has-children.is-open > .nav-dropdown { display: block; }
         .nav-has-children { cursor: pointer; }
         .nav-has-children > .nav-parent { cursor: pointer; }
+        #header-inner { overflow: visible; }
+        #header-inner::after { content: ""; display: table; clear: both; }
     </style>
 
     {{ hugo.Generator }}
