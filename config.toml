@@ -13,6 +13,36 @@ googleAnalytics = "UA-141670233-1"
   url = "/about/"
   weight = 1
 
+[[menu.main]]
+  name = "Resources"
+  identifier = "resources"
+  url = "#"
+  weight = 2
+
+[[menu.main]]
+  name = "Computer Science"
+  parent = "resources"
+  url = "https://www.kusandriadi.com/cs"
+  weight = 1
+
+[[menu.main]]
+  name = "AI Blog"
+  parent = "resources"
+  url = "https://www.kusandriadi.com/ai-blog"
+  weight = 2
+
+[[menu.main]]
+  name = "Jadwal Sholat Indonesia"
+  parent = "resources"
+  url = "https://www.kusandriadi.com/salat-time"
+  weight = 3
+
+[[menu.main]]
+  name = "Elcompia"
+  parent = "resources"
+  url = "https://www.kusandriadi.com/elcompia"
+  weight = 4
+
 [params.author]
 	name = "Kus Andriadi"
 	github = "kusandriadi"

@@ -5,7 +5,18 @@
             <a id="logo" class="logo-text" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
             <nav id="main-nav">
                 {{ range .Site.Menus.main }}
+                {{ if .HasChildren }}
+                <div class="main-nav-link nav-has-children">
+                    <a href="{{ .URL }}" class="nav-parent">{{ .Name }} <span class="nav-caret">&#9662;</span></a>
+                    <div class="nav-dropdown">
+                        {{ range .Children }}
+                        <a href="{{ .URL }}">{{ .Name }}</a>
+                        {{ end }}
+                    </div>
+                </div>
+                {{ else }}
                 <a class="main-nav-link" href="{{ .URL }}">{{ .Name }}</a>
+                {{ end }}
                 {{ end }}
             </nav>
             <nav id="sub-nav">
