@@ -14,6 +14,10 @@
     <link href="{{ "webfonts/source-code-pro/main.css" | absURL }}" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+    <style>
+        .nav-has-children.is-open > .nav-dropdown { display: block; }
+        .nav-has-children > .nav-parent { cursor: pointer; }
+    </style>
 
     {{ hugo.Generator }}
 </head>
