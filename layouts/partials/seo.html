@@ -11,7 +11,7 @@
         "headline" : "{{ .Title }}",
         "description" : "{{ .Description }}",
         "inLanguage" : "en-US",
-        "author" : "{{ range .Site.Author }}{{ . }}{{ end }}",         
+        "author" : "{{ .Site.Params.author.name }}",
         "url" : "{{ .Permalink }}",
         "wordCount" : "{{ .WordCount }}",
         "keywords" : [ {{ if isset .Params "tags" }}{{ range .Params.tags }}"{{ . }}",{{ end }}{{ end }}"Blog" ]

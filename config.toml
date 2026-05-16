@@ -4,9 +4,6 @@ title = "Kus Andriadi"
 enableRobotsTXT=true
 googleAnalytics = "UA-141670233-1"
 
-[Author]
-    name = "Kus Andriadi"
-
 [taxonomies]
   tag = "tags"
 
@@ -17,6 +14,7 @@ googleAnalytics = "UA-141670233-1"
   weight = 1
 
 [params.author]
+	name = "Kus Andriadi"
 	github = "kusandriadi"
 
 [params]
@@ -31,3 +29,8 @@ googleAnalytics = "UA-141670233-1"
   ChangeFreq = "weekly"
   Priority = "0.5"
   filename = "sitemap.xml"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
